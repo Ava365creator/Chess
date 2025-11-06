@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chess — chess-web</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- CDN for chessboard.js and chess.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/css/chessboard.min.css" integrity="" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Chess (basic)</h1>
+      <div id="board" class="board"></div>
+
+      <div class="controls">
+        <button id="newBtn">New Game</button>
+        <button id="undoBtn">Undo</button>
+        <span id="status"></span>
+      </div>
+
+      <div class="info">
+        <label>FEN:</label>
+        <input id="fen" readonly>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.12.0/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/js/chessboard.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
