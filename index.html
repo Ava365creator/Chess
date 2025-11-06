@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chess — chess-web</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- CDN for chessboard.js and chess.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/css/chessboard.min.css" integrity="" crossorigin="anonymous" />
+  <!-- CDN for chessboard.js and chess.js (fallback to alternate CDNs) -->
+  <link rel="stylesheet" href="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css" />
   </head>
   <body>
     <div class="app">
@@ -26,9 +26,9 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.12.0/chess.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/js/chessboard.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chess.js@0.12.0/chess.min.js"></script>
+  <script src="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
